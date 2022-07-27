@@ -7,7 +7,7 @@ import { BooksModule } from './books/books.module';
   imports: [
     BooksModule,
     MongooseModule.forRoot(
-      'mongodb+srv://noflex:DHWC6nDpiaizf8mM@cluster0.hopczol.mongodb.net/?retryWrites=true&w=majority'
+      `mongodb+srv://${process.env.MONGODB_USER}:${process.env.MONGODB_PASSWORD}@cluster0.hopczol.mongodb.net/?retryWrites=true&w=majority`
     ),
   ],
 })
