@@ -1,4 +1,5 @@
 import { ShoppingBagIcon } from '@heroicons/react/solid';
+import Logo from '../shared/Logo';
 
 /* eslint-disable-next-line */
 export interface TopBarProps {}
@@ -7,9 +8,7 @@ export function TopBar() {
   return (
     <section className="fixed z-50 h-14 w-full bg-indigo-600">
       <div className="container mx-auto flex h-full items-center justify-between">
-        <div className="text-xl font-semibold uppercase tracking-widest text-white">
-          Bookstore
-        </div>
+        <Logo />
         <div className="flex items-center space-x-12">
           <nav className="flex items-center">
             <ul className="flex space-x-10 text-sm leading-none">

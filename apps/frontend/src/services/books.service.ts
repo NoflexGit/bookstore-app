@@ -8,6 +8,11 @@ class BooksService {
     return data;
   };
 
+  getBook = async (id: string) => {
+    const { data } = await axios(`${baseUrl}/${id}`);
+    return data;
+  }
+
   createBook = async (params: any) => {
     const { data } = await axios.post(baseUrl, params);
     return data;

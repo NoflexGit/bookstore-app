@@ -22,8 +22,8 @@ export class BooksService {
     return this.bookModel.find().exec();
   }
 
-  findOne(id: number) {
-    return `This action returns a #${id} book`;
+  findOne(id: string) {
+    return this.bookModel.findById(id).exec();
   }
 
   update(id: number, updateBookDto: UpdateBookDto) {

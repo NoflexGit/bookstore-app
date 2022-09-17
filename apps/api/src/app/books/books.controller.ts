@@ -30,7 +30,7 @@ export class BooksController {
   }
 
   @Get(':id')
-  async findOne(@Param('id', ParseIntPipe) id: number) {
+  async findOne(@Param('id') id: string) {
     return this.booksService.findOne(id);
   }
 
